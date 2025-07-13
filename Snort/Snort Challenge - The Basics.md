@@ -5,6 +5,7 @@
 ![snort rule breakdown](<../Helpful Files/snort-101-rule-breakdown.png>)
 
 ***
+
 # Task 1 - Introduction
 
 Exercises for each task are located on the desktop: `/home/ubuntu/Desktop/Exercise-Files/`
@@ -155,6 +156,8 @@ Reading the snort log with `-X` lets us see `Accept: application/x-bittorrent`. 
 ### What is the hostname of the torrent metafile?
 > tracker2.torrentbox.com
 
+***
+
 # Task 6 - Troubleshooting Rule Syntax Errors
 ## In this section, you need to fix syntax errors in the given rule files.
 
@@ -241,6 +244,8 @@ Fixed:
 
 The fix was to insert the `msg` into the alert, since it is illogical to check for errors and create alerts, if they do not tell us what they discover and what is erronous.
 
+***
+
 # Task 7 - Using External Rules (MS17-010)
 ## Use the given local.rules to investigate the ms1710 exploitation in the pcap file.
 Inspecting the `local.rules` reveals quite a few rules, and is fun to analyse for a bit, but simply executing `sudo snort -c local.rules -A full -l . -r ms-17-010.pcap` reveals the answer to the first question.
@@ -265,6 +270,8 @@ Utilising `sudo snort -r {log} -X` allows us to see into the Packets in the log,
 A quick search and a visit to https://nvd.nist.gov/vuln/detail/CVE-2017-0144 grants us the answer.
 
 > 9.3
+
+***
 
 # Task 8 - Using External Rules (Log4j)
 ## Use the given pcap file with the local.rules to investigate the log4j exploitation.
