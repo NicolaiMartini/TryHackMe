@@ -1,5 +1,7 @@
 # [Zeek Exercises](https://tryhackme.com/room/zeekbroexercises)
 
+![Corelight Zeek Logs Cheatsheet](../Helpful%20Files/Corelight-Zeek-Logs.png)
+
 Task 1 is merely an introduction telling the user to utilise the built-in VM.
 In Task 1 it is also recommended to the user, to complete the [Zeek room](https://tryhackme.com/room/zeekbro) before doing this one.
 
